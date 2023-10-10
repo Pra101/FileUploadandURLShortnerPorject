@@ -25,9 +25,8 @@ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 const Role = db.role;
-const password=encodeURIComponent("Rj19su4489#")
 db.mongoose
-  .connect(`mongodb+srv://Pra101:${password}@projectpractice.1ogj2hz.mongodb.net/?retryWrites=true&w=majority`, {
+  .connect(`<ADD YOUR MONGOBD ATLAS LINK>`, {  // NOTE IF YOUR PASSWORDS CONTAINS ANY SPECIAL CHAR THEN USE URIENCODEAND THEN PASS YOUR PASSWORD FROM THAT: YOU CAN FIND MORE INFO ON STACKOVERFLOW.
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
