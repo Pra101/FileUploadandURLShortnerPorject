@@ -1,7 +1,8 @@
 # File Upload and Short Link Generation Platform Project Made By Prahalad Singh, 
 
 Hosted on: https://farmart-app.onrender.com/ (Note: hosting was done on a free Instance, which gets down after inactivity. If you really want to test the deployed app do, let me know I will restart the server.)
-This project follows the separation of concerns policies, And hence the code base is separated between two different entities.
+
+#### This project follows the separation of concerns policies, And hence the code base is separated between two different entities.
 These are:
 
 ## 1. *Farmart-client*: 
