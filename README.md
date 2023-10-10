@@ -1,18 +1,19 @@
 # File Upload and Short Link Generation Platform Project Made By Prahalad Singh, 
 
-This is projects follows separation of concers policies, And hence the code base is separated between two different entities.
+Hosted on: https://farmart-app.onrender.com/ (Note: hosting was done on a free Instance, which gets down after inactivity. If you really want to test the deployed app do, let me know I will restart the server.)
+This project follows the separation of concerns policies, And hence the code base is separated between two different entities.
 These are:
 
 ## 1. *Farmart-client*: 
-which generally deals with frontend aspect of Project and acts as medium between end-user and server to communicate. Implemented using React and used Axios for creating API Calls to the backend.
+which generally deals with the frontend aspect of the Project and acts as a medium between end-user and server to communicate. Implemented using React and Axios for creating API Calls to the backend.
 
 ### FarMart Client Features
 
 - JWT Authentication & Authorization Flow for User Login, Register, Logout
 - Project Structure for React Redux JWT Authentication, Router, Axios
-- Working with Redux Actions, Reducers, Store using redux-toolkit
+- Working with Redux Actions, Reducers, and Store using redux-toolkit
 - Storing JWT in HttpOnly Cookies
-- Creating React Function Components with Hooks & Form Validation
+- Creating React Function Components with Hooks and form Validation
 - React Function Components for accessing protected Resources (Authorization)
 - Dynamic Navigation Bar in React App
 
@@ -26,9 +27,9 @@ which generally deals with frontend aspect of Project and acts as medium between
 1. Operates `Express` as the server.
 2. Users `mongoose` to interact with MongoDB atlas.
 3. Uses `cors` library for handling Cross Origins.
-4. For Authentication and Authorization this applications has inbuild session keys exchange policeis and uses `jsonwebtoken` library to create tokens and to store them as cookies in the browser itself.
-5. uses `bcrypt` library to deal with passwords to prevern XSS attacks.
-6. Server uses `multer` to deal wtih huge blob files for upload.
+4. For Authentication and Authorization this application has inbuild session keys exchange policies and uses `jsonwebtoken` library to create tokens and to store them as cookies in the browser itself.
+5. Use `bcrypt` library to deal with passwords to prevent XSS attacks.
+6. The server uses `multer` to deal with huge blob files for upload.
 7. Protected against cross-site scripting (XSS) and cross-site request forgery (CSRF)
 attacks.
 
@@ -38,7 +39,7 @@ attacks.
 Create IAM user AWS with [ **Access type**: `Programmatic access` ], I named mine `ex3_s333`
 
 1. Next step "**Set permissions**" -> Click "**Attach existing policies directly**"
-2. Then search with keyword "`s3`"
+2. Then search with the keyword "`s3`"
 3. To make things simple I chose/checked option "**AmazonS3FullAccess**" policy name
 4. Click "**Next:Tags**", I am not setting tags here.
 5. Finish the process, click "**Next:Review**" -> click -> "**Create user**"
@@ -133,11 +134,11 @@ Now, you are connected to your MongoDB Atlas cluster using MongoDB Compass.
 
 ### Connect to MongoDB Atlas Using Code
 
-After creating the cluster you will get a connection url for nodejs to the Atlas
+After creating the cluster you will get a connection URL for nodejs to the Atlas
 you need to paste your atlas key in the given server.js file. You can find the place in the server.js similar to the code given below.
 
 ```javascript
- // NOTE IF YOUR PASSWORDS CONTAINS ANY SPECIAL CHAR THEN USE URIENCODE AND THEN PASS YOUR PASSWORD FROM THAT: YOU CAN FIND MORE INFO ON STACKOVERFLOW.
+ // NOTE IF YOUR PASSWORD CONTAINS ANY SPECIAL CHAR THEN USE URIENCODE AND THEN PASS YOUR PASSWORD FROM THAT: YOU CAN FIND MORE INFO ON STACKOVERFLOW.
  
 db.mongoose
   .connect(`<ADD YOUR MONGOBD ATLAS LINK>`, { 
@@ -168,16 +169,16 @@ This app runs on PORT: 4050
     4. Choose S3 Bucket for storing Blob Files.
 
 ### Challenges Faced
-    1. It was a challenge to connect aws S3 bucket due to rigid Authenication at AWS. After creating IAM user then also aws was unable to connect so it needed full Authentication Access to AWS and some policy code was needed to be upgraded for deployment.
-    2. Connect to MongoDB was little challenging as it required IP Address and other tokens.
-    3. Building the authentication flow for json web token was a bit difficult to implement.
+    1. It was a challenge to connect aws S3 bucket due to rigid Authentication at AWS. After creating an IAM user then also it was unable to connect so it needed full Authentication Access to AWS and some policy code needed to be upgraded for deployment.
+    2. Connecting to MongoDB was a little challenging as it required an IP Address and other tokens.
+    3. Building the authentication flow for JSON web tokens was a bit difficult to implement.
     4. Creating a responsive UI.
-    5. Adding middlewares to restrict size and type of File being uploaded.
+    5. Adding middleware to restrict the size and type of File being uploaded.
 
-### Imporvements that can be added
+### Improvements that can be added
     1. Search Functionality for the user using `regex`.
     2. UI can be made more responsive.
 
 ### UNDER OPEN SOURCE MIT LICENSE
-    1. This software free to use and could be take for commercial Applicatins.
-    2. Made By Prahalad Singh, I strive to make not just website but an experience.
+    1. This software is free to use and could be taken for commercial applications.
+    2. Made By Prahalad Singh, I strive to make not just a website but an experience.
