@@ -22,6 +22,7 @@ which generally deals with the frontend aspect of the Project and acts as a medi
 #Runs on PORT = 3000(default react port)
 
 ```shell
+  cd farmart-client
   npm install
   npm start
 ```
@@ -159,6 +160,7 @@ db.mongoose
 ## Building And running the Farmart-sever
 
 ```shell
+    cd farmart-server
     npm install
     npm start
 ```
