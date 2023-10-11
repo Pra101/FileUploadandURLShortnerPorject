@@ -166,6 +166,12 @@ db.mongoose
 ```
 This app runs on PORT: 4050
 
+## AdditionL Features
+  1. A progress bar to show the upload process
+  2. A UI that detects the type of file uploaded and limits the size of file being uploaded to prevent flooding DoS attack.
+  3. Square-based components UI.
+  4. Followed best practises while preparing the code.
+
 ### Implementation choises
     1. Express for backend in JavaScipt.
     2. React for frontend in JavaScript.
